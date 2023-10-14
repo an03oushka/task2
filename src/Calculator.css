@@ -1,0 +1,95 @@
+
+.calculator {
+    background-color: #020246;
+    color: white;
+    padding: 0px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 9%;
+}
+  
+  
+  .screen {
+    font-size: 32px; 
+    text-align: right;
+    background-color: transparent; 
+    border: none; 
+    flex-grow: 1; 
+    height: 150px;
+    background-color: #0920a1;
+    position: relative;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #020246;;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  button.operator {
+    background-color: #020246;
+    color: #5ac0f0;
+  }
+  
+  button.clear {
+    background-color: #ff5733; 
+  }
+  
+  button.backspace::after {
+    content: '\2190'; 
+  }
+  
+  button.divide::after {
+    content: '\00F7'; 
+  }
+  
+  button.multiply::after {
+    content: 'x'; 
+  }
+  
+  button.equals::after {
+    content: '=';
+  }
+  
+  button.subtract::after {
+    content: '-'; 
+  }
+  
+  button.add::after {
+    content: '+'; 
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%; 
+    position: absolute; 
+    top: 5px; 
+  left: 10px;
+    
+  }
+  .bigger-dot {
+    width: 15px; 
+    height: 15px; 
+    top: 5px;
+    left: 30px; 
+  }
+  .top-blue-box {
+    background-color: #101080; 
+    height: 150px; 
+    width: 300px; 
+    position: absolute; 
+    top: 80px; 
+    border-top-right-radius: 9%;
+  }
